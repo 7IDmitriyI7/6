@@ -1,0 +1,28 @@
+using System;
+
+namespace _6._2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите переменную А");
+            double a = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите переменную B");
+            double b = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите переменную C");
+            double c = Convert.ToDouble(Console.ReadLine());
+            double a1 = 0, b1 = 0,c1=0;
+            a1 = a;
+            b1 = b;
+            c1 = c;
+            b = a1;
+            c = b1;
+            a = c1;
+            Console.WriteLine("перемещение С в A= " + a);
+            Console.WriteLine("перемещение А в B= " + b);
+            Console.WriteLine("перемещение В в C= " + c);
+
+        }
+    }
+}
